@@ -1,0 +1,637 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ht.educah"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/educah/StudioProjects/educah/android/app/src/main/AndroidManifest.xml:4:5-67
+15-->/home/educah/StudioProjects/educah/android/app/src/main/AndroidManifest.xml:4:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->/home/educah/StudioProjects/educah/android/app/src/main/AndroidManifest.xml:3:5-79
+16-->/home/educah/StudioProjects/educah/android/app/src/main/AndroidManifest.xml:3:22-76
+17    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- Android package visibility setting -->
+17-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:25:5-79
+17-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:25:22-76
+18    <queries>
+18-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:28:5-44:15
+19
+20        <!-- For browser content -->
+21        <intent>
+21-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:31:9-37:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:17-69
+22-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:25-66
+23
+24            <category android:name="android.intent.category.BROWSABLE" />
+24-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:17-78
+24-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:27-75
+25
+26            <data android:scheme="https" />
+26-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:41:17-44:51
+26-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:44:21-48
+27        </intent>
+28        <!-- End of browser content -->
+29        <!-- For CustomTabsService -->
+30        <intent>
+30-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:40:9-42:18
+31            <action android:name="android.support.customtabs.action.CustomTabsService" />
+31-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:41:13-90
+31-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:41:21-87
+32        </intent>
+33        <!-- End of CustomTabsService -->
+34    </queries>
+35
+36    <uses-permission android:name="android.permission.WAKE_LOCK" />
+36-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /home/educah/.gradle/caches/transforms-3/f45fe2289c3fb271e9786c957a504b2e/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:5-68
+36-->[com.google.android.gms:play-services-measurement-sdk-api:20.1.2] /home/educah/.gradle/caches/transforms-3/f45fe2289c3fb271e9786c957a504b2e/transformed/jetified-play-services-measurement-sdk-api-20.1.2/AndroidManifest.xml:25:22-65
+37    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+37-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:5-81
+37-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:22-78
+38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+38-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:5-77
+38-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:28:22-74
+39
+40    <permission
+40-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+41        android:name="ht.educah.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="ht.educah.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+45
+46    <application
+47        android:name="android.app.Application"
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.9.0] /home/educah/.gradle/caches/transforms-3/85b7bdf0a11e2121e5a233436dc527ac/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:icon="@mipmap/ic_launcher"
+51        android:label="EducaH" >
+52        <activity
+53            android:name="ht.educah.educah.MainActivity"
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+55            android:exported="true"
+56            android:hardwareAccelerated="true"
+57            android:launchMode="singleTop"
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84        <meta-data
+85            android:name="com.google.android.gms.ads.APPLICATION_ID"
+86            android:value="ca-app-pub-3457516247672831~4258275133" />
+87
+88        <service
+88-->[:cloud_firestore] /home/educah/StudioProjects/educah/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[:cloud_firestore] /home/educah/StudioProjects/educah/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:68:13-37
+92            <meta-data
+92-->[:cloud_firestore] /home/educah/StudioProjects/educah/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+93-->[:cloud_firestore] /home/educah/StudioProjects/educah/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:cloud_firestore] /home/educah/StudioProjects/educah/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+95            <meta-data
+95-->[:firebase_dynamic_links] /home/educah/StudioProjects/educah/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+96-->[:firebase_dynamic_links] /home/educah/StudioProjects/educah/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:firebase_dynamic_links] /home/educah/StudioProjects/educah/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+98            <meta-data
+98-->[:firebase_auth] /home/educah/StudioProjects/educah/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+99                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+99-->[:firebase_auth] /home/educah/StudioProjects/educah/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[:firebase_auth] /home/educah/StudioProjects/educah/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+101            <meta-data
+101-->[:firebase_storage] /home/educah/StudioProjects/educah/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+102-->[:firebase_storage] /home/educah/StudioProjects/educah/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-126
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:firebase_storage] /home/educah/StudioProjects/educah/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+104            <meta-data
+104-->[:firebase_core] /home/educah/StudioProjects/educah/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+105-->[:firebase_core] /home/educah/StudioProjects/educah/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_core] /home/educah/StudioProjects/educah/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:69:13-71:85
+108                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+108-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:70:17-109
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:71:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-firestore:24.4.5] /home/educah/.gradle/caches/transforms-3/8ec15aced19208ee9fe8726619b10abb/transformed/jetified-firebase-firestore-24.4.5/AndroidManifest.xml:19:13-21:85
+111                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+111-->[com.google.firebase:firebase-firestore:24.4.5] /home/educah/.gradle/caches/transforms-3/8ec15aced19208ee9fe8726619b10abb/transformed/jetified-firebase-firestore-24.4.5/AndroidManifest.xml:20:17-111
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-firestore:24.4.5] /home/educah/.gradle/caches/transforms-3/8ec15aced19208ee9fe8726619b10abb/transformed/jetified-firebase-firestore-24.4.5/AndroidManifest.xml:21:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/educah/.gradle/caches/transforms-3/328ea6898876e3189dd0b3ffd312fcda/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:26:13-28:85
+114                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+114-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/educah/.gradle/caches/transforms-3/328ea6898876e3189dd0b3ffd312fcda/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:27:17-133
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-dynamic-links:21.1.0] /home/educah/.gradle/caches/transforms-3/328ea6898876e3189dd0b3ffd312fcda/transformed/jetified-firebase-dynamic-links-21.1.0/AndroidManifest.xml:28:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-storage:20.1.0] /home/educah/.gradle/caches/transforms-3/bd056470c650fc1d6acbae32adf9ed80/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+117                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+117-->[com.google.firebase:firebase-storage:20.1.0] /home/educah/.gradle/caches/transforms-3/bd056470c650fc1d6acbae32adf9ed80/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-storage:20.1.0] /home/educah/.gradle/caches/transforms-3/bd056470c650fc1d6acbae32adf9ed80/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+119        </service>
+120
+121        <provider
+121-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+122            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+122-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+123            android:authorities="ht.educah.flutter.image_provider"
+123-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+124            android:exported="false"
+124-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+125            android:grantUriPermissions="true" >
+125-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+126            <meta-data
+126-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+127                android:name="android.support.FILE_PROVIDER_PATHS"
+127-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+128                android:resource="@xml/flutter_image_picker_file_paths" />
+128-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+129        </provider>
+130
+131        <activity
+131-->[:url_launcher_android] /home/educah/StudioProjects/educah/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+132            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+132-->[:url_launcher_android] /home/educah/StudioProjects/educah/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+133            android:exported="false"
+133-->[:url_launcher_android] /home/educah/StudioProjects/educah/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+134            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+134-->[:url_launcher_android] /home/educah/StudioProjects/educah/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+135
+136        <meta-data
+136-->[:google_mobile_ads] /home/educah/StudioProjects/educah/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-14:36
+137            android:name="io.flutter.embedded_views_preview"
+137-->[:google_mobile_ads] /home/educah/StudioProjects/educah/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-61
+138            android:value="true" />
+138-->[:google_mobile_ads] /home/educah/StudioProjects/educah/build/google_mobile_ads/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-33
+139        <!--
+140           Declares a provider which allows us to store files to share in
+141           '.../caches/share_plus' and grant the receiving action access
+142        -->
+143        <provider
+143-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-23:20
+144            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+144-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-77
+145            android:authorities="ht.educah.flutter.share_provider"
+145-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-74
+146            android:exported="false"
+146-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+147            android:grantUriPermissions="true" >
+147-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-47
+148            <meta-data
+148-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+149                android:name="android.support.FILE_PROVIDER_PATHS"
+149-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+150                android:resource="@xml/flutter_share_file_paths" />
+150-->[:image_picker_android] /home/educah/StudioProjects/educah/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+151        </provider>
+152        <!--
+153           This manifest declared broadcast receiver allows us to use an explicit
+154           Intent when creating a PendingItent to be informed of the user's choice
+155        -->
+156        <receiver
+156-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-34:20
+157            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+157-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-82
+158            android:exported="false" >
+158-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-37
+159            <intent-filter>
+159-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-33:29
+160                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+160-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-65
+160-->[:share_plus] /home/educah/StudioProjects/educah/build/share_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:32:25-62
+161            </intent-filter>
+162        </receiver>
+163
+164        <activity
+164-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+165            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+165-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+166            android:excludeFromRecents="true"
+166-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+169        <!--
+170            Service handling Google Sign-In user revocation. For apps that do not integrate with
+171            Google Sign-In, this service will never be started.
+172        -->
+173        <service
+173-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+174            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+174-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+175            android:exported="true"
+175-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+176            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+176-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+177            android:visibleToInstantApps="true" />
+177-->[com.google.android.gms:play-services-auth:20.4.1] /home/educah/.gradle/caches/transforms-3/e7bd19fb339737b3486666b58a57b3de/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+178
+179        <activity
+179-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:29:9-46:20
+180            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+180-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:30:13-80
+181            android:excludeFromRecents="true"
+181-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:31:13-46
+182            android:exported="true"
+182-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:32:13-36
+183            android:launchMode="singleTask"
+183-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:33:13-44
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+184-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:34:13-72
+185            <intent-filter>
+185-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:35:13-45:29
+186                <action android:name="android.intent.action.VIEW" />
+186-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:17-69
+186-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:25-66
+187
+188                <category android:name="android.intent.category.DEFAULT" />
+188-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:38:17-76
+188-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:38:27-73
+189                <category android:name="android.intent.category.BROWSABLE" />
+189-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:17-78
+189-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:27-75
+190
+191                <data
+191-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:41:17-44:51
+192                    android:host="firebase.auth"
+192-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:42:21-49
+193                    android:path="/"
+193-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:43:21-37
+194                    android:scheme="genericidp" />
+194-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:44:21-48
+195            </intent-filter>
+196        </activity>
+197        <activity
+197-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:47:9-64:20
+198            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+198-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:48:13-79
+199            android:excludeFromRecents="true"
+199-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:49:13-46
+200            android:exported="true"
+200-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:50:13-36
+201            android:launchMode="singleTask"
+201-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:51:13-44
+202            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+202-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:52:13-72
+203            <intent-filter>
+203-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:53:13-63:29
+204                <action android:name="android.intent.action.VIEW" />
+204-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:17-69
+204-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:36:25-66
+205
+206                <category android:name="android.intent.category.DEFAULT" />
+206-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:38:17-76
+206-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:38:27-73
+207                <category android:name="android.intent.category.BROWSABLE" />
+207-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:17-78
+207-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:39:27-75
+208
+209                <data
+209-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:41:17-44:51
+210                    android:host="firebase.auth"
+210-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:42:21-49
+211                    android:path="/"
+211-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:43:21-37
+212                    android:scheme="recaptcha" />
+212-->[com.google.firebase:firebase-auth:21.2.0] /home/educah/.gradle/caches/transforms-3/0e82541e6dffe10a455c9b61bbcee478/transformed/jetified-firebase-auth-21.2.0/AndroidManifest.xml:44:21-48
+213            </intent-filter>
+214        </activity>
+215        <activity
+215-->[com.google.android.gms:play-services-base:18.0.1] /home/educah/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+216            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+216-->[com.google.android.gms:play-services-base:18.0.1] /home/educah/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+217            android:exported="false"
+217-->[com.google.android.gms:play-services-base:18.0.1] /home/educah/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+218            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+218-->[com.google.android.gms:play-services-base:18.0.1] /home/educah/.gradle/caches/transforms-3/c7232b6ce4e188bed1222fb6e790465b/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+219
+220        <provider
+220-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+221            android:name="com.google.firebase.provider.FirebaseInitProvider"
+221-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+222            android:authorities="ht.educah.firebaseinitprovider"
+222-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+224            android:exported="false"
+224-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+225            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+225-->[com.google.firebase:firebase-common:20.3.2] /home/educah/.gradle/caches/transforms-3/7c67cb1107658111bdfb744d9b4eec58/transformed/jetified-firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+226        <activity
+226-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:49:9-53:64
+227            android:name="com.google.android.gms.ads.AdActivity"
+227-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:50:13-65
+228            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+228-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:51:13-122
+229            android:exported="false"
+229-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:52:13-37
+230            android:theme="@android:style/Theme.Translucent" />
+230-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:53:13-61
+231
+232        <provider
+232-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:55:9-59:39
+233            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+233-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:56:13-76
+234            android:authorities="ht.educah.mobileadsinitprovider"
+234-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:57:13-73
+235            android:exported="false"
+235-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:58:13-37
+236            android:initOrder="100" />
+236-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:59:13-36
+237
+238        <service
+238-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:61:9-64:40
+239            android:name="com.google.android.gms.ads.AdService"
+239-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:62:13-64
+240            android:enabled="true"
+240-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:63:13-35
+241            android:exported="false" />
+241-->[com.google.android.gms:play-services-ads-lite:21.3.0] /home/educah/.gradle/caches/transforms-3/efc0a17c1cb135ddf7f0934f4b09ffd0/transformed/jetified-play-services-ads-lite-21.3.0/AndroidManifest.xml:64:13-37
+242
+243        <meta-data
+243-->[com.google.android.gms:play-services-basement:18.1.0] /home/educah/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+244            android:name="com.google.android.gms.version"
+244-->[com.google.android.gms:play-services-basement:18.1.0] /home/educah/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+245            android:value="@integer/google_play_services_version" />
+245-->[com.google.android.gms:play-services-basement:18.1.0] /home/educah/.gradle/caches/transforms-3/b98038a8bb5f558b05cc7fc73ca7ad87/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+246
+247        <uses-library
+247-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+248            android:name="androidx.window.extensions"
+248-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+249            android:required="false" />
+249-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+250        <uses-library
+250-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+251            android:name="androidx.window.sidecar"
+251-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+252            android:required="false" />
+252-->[androidx.window:window:1.0.0-beta04] /home/educah/.gradle/caches/transforms-3/fa8aad42c825af1f34f93ab9a34c8ecb/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+253
+254        <provider
+254-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+255            android:name="androidx.startup.InitializationProvider"
+255-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+256            android:authorities="ht.educah.androidx-startup"
+256-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+257            android:exported="false" >
+257-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+258            <meta-data
+258-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+259                android:name="androidx.work.WorkManagerInitializer"
+259-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+260                android:value="androidx.startup" />
+260-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+261        </provider>
+262
+263        <service
+263-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+264            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+264-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+265            android:directBootAware="false"
+265-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+266            android:enabled="@bool/enable_system_alarm_service_default"
+266-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+267            android:exported="false" />
+267-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+268        <service
+268-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+269            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+269-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+270            android:directBootAware="false"
+270-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+271            android:enabled="@bool/enable_system_job_service_default"
+271-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+272            android:exported="true"
+272-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+273            android:permission="android.permission.BIND_JOB_SERVICE" />
+273-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+274        <service
+274-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+275            android:name="androidx.work.impl.foreground.SystemForegroundService"
+275-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+276            android:directBootAware="false"
+276-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+277            android:enabled="@bool/enable_system_foreground_service_default"
+277-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+278            android:exported="false" />
+278-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+279
+280        <receiver
+280-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+281            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+281-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+282            android:directBootAware="false"
+282-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+283            android:enabled="true"
+283-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+284            android:exported="false" />
+284-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+285        <receiver
+285-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+286            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+286-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+287            android:directBootAware="false"
+287-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+288            android:enabled="false"
+288-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+289            android:exported="false" >
+289-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+290            <intent-filter>
+290-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+291                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+291-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+291-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+292                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+292-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+292-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+293            </intent-filter>
+294        </receiver>
+295        <receiver
+295-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+296            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+296-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+297            android:directBootAware="false"
+297-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+298            android:enabled="false"
+298-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+299            android:exported="false" >
+299-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+300            <intent-filter>
+300-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+301                <action android:name="android.intent.action.BATTERY_OKAY" />
+301-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+301-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+302                <action android:name="android.intent.action.BATTERY_LOW" />
+302-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+302-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+303            </intent-filter>
+304        </receiver>
+305        <receiver
+305-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+306            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+306-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+307            android:directBootAware="false"
+307-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+308            android:enabled="false"
+308-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+309            android:exported="false" >
+309-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+310            <intent-filter>
+310-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+311                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+311-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+311-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+312                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+312-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+312-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+313            </intent-filter>
+314        </receiver>
+315        <receiver
+315-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+316            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+316-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+317            android:directBootAware="false"
+317-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+318            android:enabled="false"
+318-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+319            android:exported="false" >
+319-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+320            <intent-filter>
+320-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+321                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+321-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+321-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+322            </intent-filter>
+323        </receiver>
+324        <receiver
+324-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+325            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+325-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+326            android:directBootAware="false"
+326-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+327            android:enabled="false"
+327-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+328            android:exported="false" >
+328-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+329            <intent-filter>
+329-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+330                <action android:name="android.intent.action.BOOT_COMPLETED" />
+330-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:17-79
+330-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:117:25-76
+331                <action android:name="android.intent.action.TIME_SET" />
+331-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+331-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+332                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+332-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+332-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+333            </intent-filter>
+334        </receiver>
+335        <receiver
+335-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+336            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+336-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+337            android:directBootAware="false"
+337-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+338            android:enabled="@bool/enable_system_alarm_service_default"
+338-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+339            android:exported="false" >
+339-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+340            <intent-filter>
+340-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+341                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+341-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+341-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+342            </intent-filter>
+343        </receiver>
+344        <receiver
+344-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+345            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+345-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+346            android:directBootAware="false"
+346-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+347            android:enabled="true"
+347-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+348            android:exported="true"
+348-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+349            android:permission="android.permission.DUMP" >
+349-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+350            <intent-filter>
+350-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+351                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+351-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+351-->[androidx.work:work-runtime:2.7.0] /home/educah/.gradle/caches/transforms-3/3c80781a0cfb2499508d6a951116b2e7/transformed/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+352            </intent-filter>
+353        </receiver>
+354
+355        <provider
+355-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/educah/.gradle/caches/transforms-3/efe57afdc33bd1865a001bdb0070ca9c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+356            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+356-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/educah/.gradle/caches/transforms-3/efe57afdc33bd1865a001bdb0070ca9c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+357            android:authorities="ht.educah.lifecycle-process"
+357-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/educah/.gradle/caches/transforms-3/efe57afdc33bd1865a001bdb0070ca9c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+358            android:exported="false"
+358-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/educah/.gradle/caches/transforms-3/efe57afdc33bd1865a001bdb0070ca9c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+359            android:multiprocess="true" />
+359-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/educah/.gradle/caches/transforms-3/efe57afdc33bd1865a001bdb0070ca9c/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+360
+361        <service
+361-->[androidx.room:room-runtime:2.2.5] /home/educah/.gradle/caches/transforms-3/7eccf00b0b3c3e7939afa76a13201833/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+362            android:name="androidx.room.MultiInstanceInvalidationService"
+362-->[androidx.room:room-runtime:2.2.5] /home/educah/.gradle/caches/transforms-3/7eccf00b0b3c3e7939afa76a13201833/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+363            android:directBootAware="true"
+363-->[androidx.room:room-runtime:2.2.5] /home/educah/.gradle/caches/transforms-3/7eccf00b0b3c3e7939afa76a13201833/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+364            android:exported="false" />
+364-->[androidx.room:room-runtime:2.2.5] /home/educah/.gradle/caches/transforms-3/7eccf00b0b3c3e7939afa76a13201833/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+365    </application>
+366
+367</manifest>

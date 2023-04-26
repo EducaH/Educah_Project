@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "263099780198",
+    "project_id": "educah-9994e",
+    "storage_bucket": "educah-9994e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263099780198:android:816f7ef970dbe8230b31a7",
+        "android_client_info": {
+          "package_name": "ht.educah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263099780198-5mbooirugcs99p9768sdcap3e28t5qgj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ht.educah",
+            "certificate_hash": "dd57f3fc0bb51e882461f509ab356f4f7f4222a1"
+          }
+        },
+        {
+          "client_id": "263099780198-cked4n6j8hq292s9qtnmo78qnmp0i71f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ht.educah",
+            "certificate_hash": "6115833d8b2bf324be8e6447630732b003d4ed31"
+          }
+        },
+        {
+          "client_id": "263099780198-d26clv3jlhe455m416nv9peviid784l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHmectNURo8TUOEUwg6QQFKAOXjPiLLnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263099780198-7ai0ortrmtg6h50s821r5ej5is6iia57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
